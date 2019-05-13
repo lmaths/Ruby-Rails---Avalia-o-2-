@@ -1,0 +1,12 @@
+
+
+<p id="Personagem"> </p>
+<h2>Nome: <%= @personagem.nome %> </h2>
+<ul>
+<li>Forca: <%= @personagem.forca %> </li>
+<li>Resistencia: <%= @personagem.resistencia %> </li>
+<li>Agilidade: <%=@personagem.agilidade%></li>
+<li>Destreza <%=@personagem.destreza%></li>
+
+</ul>
+<%= link_to 'Editar Perfil', edit_personagem_path(@personagem) %>
