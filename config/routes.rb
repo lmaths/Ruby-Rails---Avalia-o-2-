@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   resources :poderes
   resources :personagens
+
+  root 'home#index'
 end

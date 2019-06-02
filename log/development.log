@@ -1013,3 +1013,1350 @@ Processing by PersonagensController#show as HTML
 Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-05-29 13:56:31 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 18ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/poderes" for 127.0.0.1 at 2019-05-29 13:56:38 -0300
+  
+ActionController::RoutingError (uninitialized constant PoderesController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/personagens" for 127.0.0.1 at 2019-05-29 13:56:47 -0300
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for PersonagensController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/index" for 127.0.0.1 at 2019-05-29 13:56:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/personagens/new" for 127.0.0.1 at 2019-05-29 13:57:02 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 316ms (Views: 290.1ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/personagens" for 127.0.0.1 at 2019-05-29 13:57:14 -0300
+Processing by PersonagensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FHJCilFTGPcrKz9oavMj0fFVfTy6P8UBGTUa7dmgN0Z33dPR0BhXgU/NxZqNQce+GAVCyBV3gUC7emr2soUmfA==", "personagem"=>{"nome"=>"Joao", "forca"=>"10", "resistencia"=>"20", "agilidade"=>"10", "destreza"=>"20"}, "commit"=>"Create Personagem"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "personagens" ("nome", "forca", "resistencia", "agilidade", "destreza") VALUES (?, ?, ?, ?, ?)[0m  [["nome", "Joao"], ["forca", 10], ["resistencia", 20], ["agilidade", 10], ["destreza", 20]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/personagens/14
+Completed 302 Found in 10ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/personagens/14" for 127.0.0.1 at 2019-05-29 13:57:14 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens/14/edit" for 127.0.0.1 at 2019-05-29 13:57:16 -0300
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for PersonagensController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-29 20:28:57 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (4.1ms)
+Completed 200 OK in 19ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Personagens" for 127.0.0.1 at 2019-05-29 20:29:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/Personagens"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/Personagens/new" for 127.0.0.1 at 2019-05-29 20:29:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/Personagens/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/personagens/new" for 127.0.0.1 at 2019-05-29 20:29:14 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 246ms (Views: 224.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/personagens/show" for 127.0.0.1 at 2019-05-29 20:29:25 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Personagem with 'id'=show):
+  
+app/controllers/personagens_controller.rb:27:in `show'
+Started GET "/poderes/new" for 127.0.0.1 at 2019-05-29 20:29:43 -0300
+  
+ActionController::RoutingError (uninitialized constant PoderesController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/poderes/" for 127.0.0.1 at 2019-05-29 20:29:48 -0300
+  
+ActionController::RoutingError (uninitialized constant PoderesController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/poderes/new" for 127.0.0.1 at 2019-05-29 20:29:53 -0300
+  
+ActionController::RoutingError (uninitialized constant PoderesController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-06-01 19:25:58 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 34ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-01 19:26:03 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 255ms (Views: 233.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/poderes" for 127.0.0.1 at 2019-06-01 19:27:12 -0300
+  
+ActionController::RoutingError (uninitialized constant PoderesController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-01 19:27:22 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-01 19:28:02 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-01 19:31:17 -0300
+  
+SyntaxError (/home/matheus/Ruby-Rails---Avalia-o-2-/app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+...                flash[:notice]: "Personagem criado com suces...
+...                              ^):
+  
+app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-01 19:31:27 -0300
+  
+SyntaxError (/home/matheus/Ruby-Rails---Avalia-o-2-/app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+...                flash[:notice]: "Personagem criado com suces...
+...                              ^):
+  
+app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-01 19:31:35 -0300
+  
+SyntaxError (/home/matheus/Ruby-Rails---Avalia-o-2-/app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+...                flash[:notice]: "Personagem criado com suces...
+...                              ^):
+  
+app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-01 19:31:37 -0300
+  
+SyntaxError (/home/matheus/Ruby-Rails---Avalia-o-2-/app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+...                flash[:notice]: "Personagem criado com suces...
+...                              ^):
+  
+app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-01 19:31:41 -0300
+  
+SyntaxError (/home/matheus/Ruby-Rails---Avalia-o-2-/app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+...                flash[:notice]: "Personagem criado com suces...
+...                              ^):
+  
+app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-01 19:31:42 -0300
+  
+SyntaxError (/home/matheus/Ruby-Rails---Avalia-o-2-/app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+...                flash[:notice]: "Personagem criado com suces...
+...                              ^):
+  
+app/controllers/personagens_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-01 19:31:49 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 31ms (Views: 16.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/personagens" for 127.0.0.1 at 2019-06-01 19:31:58 -0300
+Processing by PersonagensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7cOMPp8iO5eZY4QEO3L32QiixKGWa8zoHTHPoNf2MRtawkaKdDoZRBjEgGHpzmaes1Y9apR0OS/q5ypZwfTxWQ==", "personagem"=>{"nome"=>"Joao", "forca"=>"10", "resistencia"=>"20", "agilidade"=>"10", "destreza"=>"20"}, "commit"=>"Create Personagem"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "personagens" ("nome", "forca", "resistencia", "agilidade", "destreza") VALUES (?, ?, ?, ?, ?)[0m  [["nome", "Joao"], ["forca", 10], ["resistencia", 20], ["agilidade", 10], ["destreza", 20]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/personagens/15
+Completed 302 Found in 11ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/personagens/15" for 127.0.0.1 at 2019-06-01 19:31:58 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens/15/edit" for 127.0.0.1 at 2019-06-01 20:08:25 -0300
+Started GET "/personagens/15/edit" for 127.0.0.1 at 2019-06-01 20:08:25 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 59ms (Views: 31.8ms | ActiveRecord: 2.9ms)
+
+
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPersonagem Load (0.5ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 55ms (Views: 20.7ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/personagens/15" for 127.0.0.1 at 2019-06-01 20:08:40 -0300
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for PersonagensController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started PATCH "/personagens/15" for 127.0.0.1 at 2019-06-01 20:08:47 -0300
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for PersonagensController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:25:31 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 32ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-02 14:25:36 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/new.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 258ms (Views: 238.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/personagens/edit" for 127.0.0.1 at 2019-06-02 14:25:40 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Personagem with 'id'=edit):
+  
+app/controllers/personagens_controller.rb:27:in `show'
+Started GET "/personagens/1/edit" for 127.0.0.1 at 2019-06-02 14:25:48 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/personagens/1" for 127.0.0.1 at 2019-06-02 14:25:51 -0300
+Processing by PersonagensController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4SHcu1UF3bn+L73OACs1639WaTYz+mQQos645zMdEd3vPyQU33SS3+NAHbDqsIQwZrGcw4l9yVqSZ329gFEwOQ==", "personagem"=>{"nome"=>"Élisson", "forca"=>"10", "resistencia"=>"1", "agilidade"=>"7", "destreza"=>"9"}, "commit"=>"Update Personagem", "id"=>"1"}
+No template found for PersonagensController#update, rendering head :no_content
+Completed 204 No Content in 46ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens/1/edit" for 127.0.0.1 at 2019-06-02 14:29:19 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (5.3ms)
+  Rendered personagens/edit.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens/1/edit" for 127.0.0.1 at 2019-06-02 14:29:20 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (5.7ms)
+  Rendered personagens/edit.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/1/edit" for 127.0.0.1 at 2019-06-02 14:29:21 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (5.4ms)
+  Rendered personagens/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/1/edit" for 127.0.0.1 at 2019-06-02 14:29:22 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (4.4ms)
+  Rendered personagens/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/personagens/1/edit" for 127.0.0.1 at 2019-06-02 14:29:23 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (8.0ms)
+  Rendered personagens/edit.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/personagens/1/edit" for 127.0.0.1 at 2019-06-02 14:32:58 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (6.5ms)
+  Rendered personagens/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 49ms (Views: 27.6ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/personagens/1" for 127.0.0.1 at 2019-06-02 14:33:00 -0300
+Processing by PersonagensController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s9/t/laFwztl+CwbVrqdsNBJrzkl9U/8UGsFvbsYtlK9wRVR3PSMXXiXjGW8ISxrya5azJ9y4rZgwsDnCFSXtg==", "personagem"=>{"nome"=>"Élisson", "forca"=>"10", "resistencia"=>"1", "agilidade"=>"7", "destreza"=>"9"}, "commit"=>"Update Personagem", "id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `personagem' for #<PersonagensController:0x00007f09443aaff8>
+Did you mean?  @personagem):
+  
+app/controllers/personagens_controller.rb:37:in `update'
+Started PATCH "/personagens/1" for 127.0.0.1 at 2019-06-02 14:33:29 -0300
+Processing by PersonagensController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s9/t/laFwztl+CwbVrqdsNBJrzkl9U/8UGsFvbsYtlK9wRVR3PSMXXiXjGW8ISxrya5azJ9y4rZgwsDnCFSXtg==", "personagem"=>{"nome"=>"Élisson", "forca"=>"10", "resistencia"=>"1", "agilidade"=>"7", "destreza"=>"9"}, "commit"=>"Update Personagem", "id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/personagens/1
+Completed 302 Found in 18ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-06-02 14:33:29 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/personagens/1" for 127.0.0.1 at 2019-06-02 14:33:35 -0300
+Processing by PersonagensController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s9/t/laFwztl+CwbVrqdsNBJrzkl9U/8UGsFvbsYtlK9wRVR3PSMXXiXjGW8ISxrya5azJ9y4rZgwsDnCFSXtg==", "personagem"=>{"nome"=>"Élisson", "forca"=>"5", "resistencia"=>"1", "agilidade"=>"7", "destreza"=>"9"}, "commit"=>"Update Personagem", "id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "personagens" SET "forca" = ? WHERE "personagens"."id" = ?[0m  [["forca", 5], ["id", 1]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/personagens/1
+Completed 302 Found in 12ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-06-02 14:33:35 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/personagens/1" for 127.0.0.1 at 2019-06-02 14:33:40 -0300
+Processing by PersonagensController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s9/t/laFwztl+CwbVrqdsNBJrzkl9U/8UGsFvbsYtlK9wRVR3PSMXXiXjGW8ISxrya5azJ9y4rZgwsDnCFSXtg==", "personagem"=>{"nome"=>"Élisson", "forca"=>"5", "resistencia"=>"1", "agilidade"=>"7", "destreza"=>"1231"}, "commit"=>"Update Personagem", "id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "personagens" SET "destreza" = ? WHERE "personagens"."id" = ?[0m  [["destreza", 1231], ["id", 1]]
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/personagens/1
+Completed 302 Found in 17ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-06-02 14:33:40 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-06-02 14:37:57 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/personagens/1" for 127.0.0.1 at 2019-06-02 14:38:04 -0300
+Processing by PersonagensController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s9/t/laFwztl+CwbVrqdsNBJrzkl9U/8UGsFvbsYtlK9wRVR3PSMXXiXjGW8ISxrya5azJ9y4rZgwsDnCFSXtg==", "personagem"=>{"nome"=>"Élisson", "forca"=>"5", "resistencia"=>"1", "agilidade"=>"7", "destreza"=>""}, "commit"=>"Update Personagem", "id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (9.8ms)
+  Rendered personagens/edit.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `erros' for #<Personagem:0x00007f09410a5fb8>
+Did you mean?  errors):
+    1: 
+    2: 
+    3: <% if @personagem.erros.any? %>
+    4:   <div id="erros_explanation">
+    5:     <h2> infelizmente não foi possivel completar a ação pois o formulario possui os seguintes erros: </h2>
+    6:     <ul>
+  
+app/views/personagens/_form.html.erb:3:in `_app_views_personagens__form_html_erb___3821783969449301347_69838861843380'
+app/views/personagens/edit.html.erb:3:in `_app_views_personagens_edit_html_erb___395875483136943883_69838861740060'
+app/controllers/personagens_controller.rb:41:in `update'
+Started PATCH "/personagens/1" for 127.0.0.1 at 2019-06-02 14:39:11 -0300
+Processing by PersonagensController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s9/t/laFwztl+CwbVrqdsNBJrzkl9U/8UGsFvbsYtlK9wRVR3PSMXXiXjGW8ISxrya5azJ9y4rZgwsDnCFSXtg==", "personagem"=>{"nome"=>"Élisson", "forca"=>"5", "resistencia"=>"1", "agilidade"=>"7", "destreza"=>""}, "commit"=>"Update Personagem", "id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (10.8ms)
+  Rendered personagens/edit.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `erros' for #<Personagem:0x00007f094175c028>
+Did you mean?  errors):
+    4:   <div id="erros_explanation">
+    5:     <h2> infelizmente não foi possivel completar a ação pois o formulario possui os seguintes erros: </h2>
+    6:     <ul>
+    7:       <% @personagem.erros.full_messages.each do |message| %>
+    8:       <li> <%= message %> </li>
+    9:       <%end%>
+   10:     </ul>
+  
+app/views/personagens/_form.html.erb:7:in `_app_views_personagens__form_html_erb___3821783969449301347_69838864685000'
+app/views/personagens/edit.html.erb:3:in `_app_views_personagens_edit_html_erb___395875483136943883_69838864713480'
+app/controllers/personagens_controller.rb:41:in `update'
+Started PATCH "/personagens/1" for 127.0.0.1 at 2019-06-02 14:39:24 -0300
+Processing by PersonagensController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s9/t/laFwztl+CwbVrqdsNBJrzkl9U/8UGsFvbsYtlK9wRVR3PSMXXiXjGW8ISxrya5azJ9y4rZgwsDnCFSXtg==", "personagem"=>{"nome"=>"Élisson", "forca"=>"5", "resistencia"=>"1", "agilidade"=>"7", "destreza"=>""}, "commit"=>"Update Personagem", "id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (5.4ms)
+  Rendered personagens/edit.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 27ms (Views: 22.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-06-02 14:39:47 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-06-02 14:39:48 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-06-02 14:42:21 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-06-02 14:42:27 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/personagens/1" for 127.0.0.1 at 2019-06-02 14:47:10 -0300
+Processing by PersonagensController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (4.4ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/show.html.erb within layouts/application
+  Rendered personagens/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 21.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/personagens/1/edit" for 127.0.0.1 at 2019-06-02 14:47:20 -0300
+Processing by PersonagensController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (5.1ms)
+  Rendered personagens/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/personagens/1" for 127.0.0.1 at 2019-06-02 14:47:24 -0300
+Processing by PersonagensController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"og2c5MzdW+x9vXAtJFeYC56GeNsx/wXZdBpA2VjCW5WsE2RLRqwUimDS0FPOzCnQh2GNLot4qJNEs4WD6456cQ==", "personagem"=>{"nome"=>"Élisson", "forca"=>"5", "resistencia"=>"1", "agilidade"=>"7", "destreza"=>""}, "commit"=>"Update Personagem", "id"=>"1"}
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" WHERE "personagens"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering personagens/edit.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (6.1ms)
+  Rendered personagens/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 38ms (Views: 31.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:49:20 -0300
+  
+ActionController::RoutingError (uninitialized constant PersonagemController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:49:52 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (3.7ms)
+  Rendered personagens/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 40ms (Views: 23.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:52:33 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 49ms (Views: 43.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:54:14 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.3ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/index.html.erb within layouts/application (299.9ms)
+Completed 500 Internal Server Error in 305ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_personagem_patch' for #<#<Class:0x00007f09442a9078>:0x00007f0941827818>
+Did you mean?  new_personagem_path
+               new_personagem_url
+               edit_personagem_path):
+    3: <p>
+    4:   Escolha uma das ações a seguir
+    5:   <ul>
+    6:     <li> <%= link_to "Criar Personagem", new_personagem_patch %> </li>
+    7:     <li><%= link_to "Visualizar personagens", personagem_patch %> </li
+    8:       </ul>
+    9: </p>
+  
+app/views/home/index.html.erb:6:in `_app_views_home_index_html_erb___3998943808111841789_69838865260760'
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:54:37 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"personagens"}, missing required keys: [:id]):
+    4:   Escolha uma das ações a seguir
+    5:   <ul>
+    6:     <li> <%= link_to "Criar Personagem", new_personagem_path %> </li>
+    7:     <li><%= link_to "Visualizar personagens", personagem_path %> </li
+    8:       </ul>
+    9: </p>
+  
+app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb___3998943808111841789_69838923593020'
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:54:53 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.2ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/index.html.erb within layouts/application (304.6ms)
+Completed 500 Internal Server Error in 308ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_personagem_path' for #<#<Class:0x00007f09442a9078>:0x000055c903d4f2e8>):
+    4:   Escolha uma das ações a seguir
+    5:   <ul>
+    6:     <li> <%= link_to "Criar Personagem", new_personagem_path %> </li>
+    7:     <li><%= link_to "Visualizar personagens", show_personagem_path %> </li
+    8:       </ul>
+    9: </p>
+  
+app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb___3998943808111841789_47160920596640'
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:54:55 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPersonagem Load (0.4ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.1ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Personagem Load (0.0ms)[0m  [1m[34mSELECT  "personagens".* FROM "personagens" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/index.html.erb within layouts/application (298.1ms)
+Completed 500 Internal Server Error in 303ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_personagem_path' for #<#<Class:0x00007f09442a9078>:0x00007f09443cac40>):
+    4:   Escolha uma das ações a seguir
+    5:   <ul>
+    6:     <li> <%= link_to "Criar Personagem", new_personagem_path %> </li>
+    7:     <li><%= link_to "Visualizar personagens", show_personagem_path %> </li
+    8:       </ul>
+    9: </p>
+  
+app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb___3998943808111841789_69838888131440'
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:56:01 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/poderes" for 127.0.0.1 at 2019-06-02 14:56:02 -0300
+  
+ActionController::RoutingError (uninitialized constant PoderesController):
+  
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.6) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.6) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:56:06 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-02 14:56:07 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (4.0ms)
+  Rendered personagens/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:56:20 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"personagens"}, missing required keys: [:id]):
+    4:   Escolha uma das ações a seguir
+    5:   <ul>
+    6:     <li> <%= link_to "Criar Personagem", new_personagem_path %> </li>
+    7:     <li><%= link_to "Visualizar personagens", personagem_path %> </li
+    8:       </ul>
+    9: </p>
+  
+app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb___3998943808111841789_69838887998800'
+Started GET "/" for 127.0.0.1 at 2019-06-02 14:56:34 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-02 14:56:36 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (6.0ms)
+  Rendered personagens/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/personagens/new" for 127.0.0.1 at 2019-06-02 14:56:36 -0300
+Processing by PersonagensController#new as HTML
+  Rendering personagens/new.html.erb within layouts/application
+  Rendered personagens/_form.html.erb (4.4ms)
+  Rendered personagens/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+

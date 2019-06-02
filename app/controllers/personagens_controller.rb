@@ -28,5 +28,19 @@ class PersonagensController < ApplicationController
 
   end
 
+  def edit
+      @personagem = Personagem.find(params[:id])
+  end
+
+  def update
+  @personagem = Personagem.find(params[:id])
+      if @personagem.update(personagem_params)
+          redirect_to @personagem,
+          notice: 'Personagem atualizado'
+      else
+          render action: :edit
+        end
+      end
+
 
 end

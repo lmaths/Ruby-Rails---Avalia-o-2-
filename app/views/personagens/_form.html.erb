@@ -1,0 +1,38 @@
+
+
+<% if @personagem.errors.any? %>
+  <div id="erros_explanation">
+    <h2> Preencha todos os campos </h2>
+    <ul>
+      <% @personagem.errors.full_messages.each do |message| %>
+      <li> <%= message %> </li>
+      <%end%>
+    </ul>
+  </div>
+  <%end%>
+
+<%= form_for @personagem do |f| %>
+<p>
+<%= f.label :nome %> <br />
+<%= f.text_field :nome %>
+</p>
+<p>
+<%= f.label :forca %> <br />
+<%= f.text_field :forca %>
+</p>
+<p>
+<%= f.label :resistencia %> <br />
+<%= f.text_field :resistencia %>
+</p>
+<p>
+<%= f.label :agilidade %> <br />
+<%= f.text_field :agilidade %>
+</p>
+<p>
+<%= f.label :destreza %> <br />
+<%= f.text_field :destreza %>
+</p>
+<p>
+<%= f.submit %>
+</p>
+<% end %>
