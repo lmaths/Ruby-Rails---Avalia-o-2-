@@ -1,0 +1,37 @@
+
+<%= form_tag("/personagens", method: "get") do %>
+  <b>Força: </b>
+  <%= number_field_tag(:forca, params[:forca]) %>
+  <%= submit_tag("Filtrar") %>
+<% end %>
+
+<table class="table table-sm">
+<thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Nome</th>
+    <th scope="col">Força</th>
+    <th scope="col">Resistencia</th>
+    <th scope="col">Agilidade</th>
+    <th scope="col">Destreza</th>
+    <th scope ="col"> Visualizar</th>
+    <th scope ="col"> Editar</th>
+
+  </tr>
+  </thead>
+  <% @personagem.each do |personagens| %>
+<tbody>
+    <tr>
+      <th scope="row"> <%=personagens.id%></th>
+      <td><%=personagens.nome %></td>
+      <td><%=personagens.forca%></td>
+      <td><%=personagens.resistencia%></td>
+      <td><%=personagens.agilidade%></td>
+      <td><%=personagens.destreza%></td>
+      <td><%= link_to 'Visualizar', personagens, class: "btn btn-outline-primary"  %></td>
+      <td><%= link_to 'Editar', edit_personagem_path(personagens), class: "btn btn-outline-success" %></td>
+
+    </tr>
+  </tbody>
+
+  <% end %>

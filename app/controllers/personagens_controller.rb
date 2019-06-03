@@ -1,5 +1,13 @@
 class PersonagensController < ApplicationController
 
+  def index
+    if params[:forca].present?
+      @personagem = Personagem.where(forca:params[:forca])
+      else
+    @personagem = Personagem.all
+  end
+  end
+
   def new
     @personagem = Personagem.new
   end
