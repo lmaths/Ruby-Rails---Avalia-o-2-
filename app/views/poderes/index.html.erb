@@ -1,0 +1,21 @@
+<table class="table table-sm">
+<thead>
+  <tr>
+    <th scope="col">Nome</th>
+    <th scope="col">Tipo</th>
+
+  </tr>
+  </thead>
+  <% @poder.each do |poder| %>
+<tbody>
+    <tr>
+
+      <td><%=poder.nome %></td>
+      <td><%=poder.tipo%></td>
+
+      <td><%= link_to 'Visualizar', poder, class: "btn btn-outline-primary"  %></td>
+      <td><%= link_to 'Editar', edit_poder_path(poder), class: "btn btn-outline-success" %></td>
+
+    </tr>
+  </tbody>
+  <% end %>

@@ -1,0 +1,21 @@
+
+    <h1>Criar poder</h1>
+    <%= form_for @poder do |f| %>
+
+    <p>
+        <%= f.label :personagem %> <br />
+        <%= f.collection_select(:personagem_id, @personagens, :id, :nome, selected: params[:personagem_id])  %>
+    </p>
+    <p>
+    <%= f.label :nome %> <br />
+    <%= f.text_field :nome %>
+    </p>
+    <p>
+    <%= f.label :tipo %> <br />
+    <%= f.text_field :tipo %>
+    </p>
+
+    <p>
+    <%= f.submit "Criar",class:'btn btn-primary'%>
+    </p>
+    <% end %>

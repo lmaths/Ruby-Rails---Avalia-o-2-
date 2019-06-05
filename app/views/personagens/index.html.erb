@@ -2,7 +2,7 @@
 <%= form_tag("/personagens", method: "get") do %>
   <b>Força: </b>
   <%= number_field_tag(:forca, params[:forca]) %>
-  <%= submit_tag("Filtrar") %>
+  <%= submit_tag("Pesquisar") %>
 <% end %>
 
 <table class="table table-sm">

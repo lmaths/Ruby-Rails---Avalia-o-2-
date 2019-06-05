@@ -1,14 +1,37 @@
 
 
 <p id="Personagem"> </p>
-<h2>Nome: <%= @personagem.nome %> </h2>
+<h3>Nome: <%= @personagem.nome %> </h2>
 <ul>
 <li>Forca: <%= @personagem.forca %> </li>
 <li>Resistencia: <%= @personagem.resistencia %> </li>
 <li>Agilidade: <%=@personagem.agilidade%></li>
-<li>Destreza <%=@personagem.destreza%></li>
-
+<li>Destreza <%=@personagem.destreza%></li
 </ul>
+
+
+<h2>Poderes</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Tipo</th>
+              <th colspan="5">Opções</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @personagem.poderes.each do |i| %>
+              <tr>
+                <td><%= i.nome %></td>
+                <td><%= i.tipo %></td>
+                <td><%= link_to 'Ver', i, class: "btn btn-success" %></td>
+                <td><%= link_to 'Editar', edit_poder_path(i), class: "btn btn-warning" %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
 
 
 <%= link_to 'Editar Perfil', edit_personagem_path(@personagem) %>
